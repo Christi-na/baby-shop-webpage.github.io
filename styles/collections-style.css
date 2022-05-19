@@ -1,0 +1,10 @@
+.header-banner{
+    height: 130px;
+    background-color: #ced2c5;
+}
+.header-banner h1{
+    font-size: 20px;
+    line-height: 130px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}

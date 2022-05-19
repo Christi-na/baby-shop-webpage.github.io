@@ -162,6 +162,7 @@ header{
 }
 .product-card img{
 	width: 100%;
+	transition: 0.2s;
 }
 .product-name{
 	position: relative;
