@@ -1,0 +1,28 @@
+/* collections */
+.header-banner{
+    height: 130px;
+    background-color: #ced2c5;
+}
+.header-banner h1{
+    font-size: 20px;
+    line-height: 130px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+/* about us */
+.about-section-ja{
+    background: pink;
+}
+.about-header{
+    width: 100%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0556/7263/5426/files/About_Page_Slideshow_Top.png?v=1640222991);
+    background-size: contain;
+   
+}
+
+@media(max-width: 760px) {
+    .about-header{
+        background-image: url(https://cdn.shopify.com/s/files/1/0556/7263/5426/files/About_Page_Fade_Slideshow_Mobile_Top.png?v=1655269285);
+    }
+}
