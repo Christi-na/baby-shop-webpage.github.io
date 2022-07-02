@@ -11,18 +11,43 @@
 }
 
 /* about us */
-.about-section-ja{
-    background: pink;
-}
+
 .about-header{
     width: 100%;
-    background-image: url(https://cdn.shopify.com/s/files/1/0556/7263/5426/files/About_Page_Slideshow_Top.png?v=1640222991);
-    background-size: contain;
-   
+    background: #ced2c5;
+    margin-bottom: 60px;
+}
+.about-banner-img{
+    width: 100%;
+}
+.center-text-box{
+    padding: 10px 30px 30px;
+}
+.about-text{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2em;
+    margin-bottom: 20px;
 }
 
-@media(max-width: 760px) {
-    .about-header{
-        background-image: url(https://cdn.shopify.com/s/files/1/0556/7263/5426/files/About_Page_Fade_Slideshow_Mobile_Top.png?v=1655269285);
-    }
+.welcome{
+    display: flex;
+    max-width: 1400px;
+    padding: 0 2%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.welcome-col{
+    flex-basis: 48%;
+}
+.welcome-col img{
+    width: 100%;
+}
+.welcome-col h2{
+    text-align: left;
+    margin-top: 20%;
+}
+.welcome-col p{
+    margin-bottom: 1.5em;
 }

@@ -94,13 +94,13 @@ header{
 }
 @keyframes bannerAnimation{
 	0% {
-		background-image: url(photos/banner1.webp);
+		background-image: url(../photos/banner1.webp);
 	}
 	33%{
-		background-image: url(photos/banner2.webp);
+		background-image: url(../photos/banner2.webp);
 	}
 	66% {
-		background-image: url(photos/banner3.webp);
+		background-image: url(../photos/banner3.webp);
 	}
 }
 /*--------------MENU SECTION-----------------*/
