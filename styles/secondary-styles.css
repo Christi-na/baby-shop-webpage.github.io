@@ -30,24 +30,71 @@
     line-height: 2em;
     margin-bottom: 20px;
 }
-
-.welcome{
+.about-flexbox{
     display: flex;
-    max-width: 1400px;
+    flex-wrap: wrap;
+    max-width: 1600px;
     padding: 0 2%;
     margin: 0 auto;
     justify-content: space-between;
 }
-.welcome-col{
-    flex-basis: 48%;
+.welcome{
+    margin-bottom: 60px;
 }
-.welcome-col img{
+.about-col{
+    flex-basis: 48%;
+    overflow: hidden;
+}
+.about-col img{
     width: 100%;
 }
-.welcome-col h2{
+.about-col h2{
     text-align: left;
     margin-top: 20%;
 }
-.welcome-col p{
+.about-col p{
     margin-bottom: 1.5em;
+}
+
+@media (max-width: 1080px){
+    .about-col img{
+        width: 500px;
+    }
+    .about-col{
+        object-fit: cover;
+        object-position: center center;
+    }
+    .about-col h2{
+        margin-top: 0;
+    }
+}
+@media (max-width: 750px){
+    .about-flexbox{
+        flex-direction: column;
+    }
+    .about-col img{
+        width: 100%;
+        height: auto;
+    }
+    .about-col h2{
+        margin-top: 30px;
+    }
+}
+/* mission */
+.mission{
+    margin-bottom: 60px;
+}
+.mission_banner{
+    height: 90vh;
+    background: url(https://cdn.shopify.com/s/files/1/0556/7263/5426/files/About_Page_Slideshow_1.png?v=1640222990) center left;
+    background-size: cover;
+    margin-bottom: 60px;
+}  
+
+@media (max-width: 1080px) {
+    .mission_banner{
+        min-height: 1000px;
+        background: url(https://cdn.shopify.com/s/files/1/0556/7263/5426/files/About_Page_Slideshow_Mobile_2.png?v=1655269285) top center;
+        background-size: cover;
+    }
 }
