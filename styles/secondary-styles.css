@@ -151,3 +151,74 @@ summary:hover{
 .question input:checked .answer{
     display: block;
 }
+
+/* Contact Page */
+.contact-banner img{
+    width: 100%;
+    margin: 0;
+}
+.contact-intro_text{
+    max-width: 700px;
+    margin: 30px auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact-intro_text h2{
+    text-transform: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 2em;
+}
+.contact-intro_text p{
+    letter-spacing: 0.06em;
+    font-size: 0.9em;
+    line-height: 2em;
+    margin-bottom: 30px;
+}
+.contact-intro_text button{
+    padding: 15px 30px;
+    background-color: #fff;
+    font-size: 1em;
+    border: 1px solid black;
+    letter-spacing: 0.1em;
+    transition: 0.3s ease;
+}
+.contact-intro_text button:hover, .contact-intro_text button:active, 
+.contact-intro_text button:focus{
+    box-shadow: 0 0 1px 1px black;
+}
+
+.contact-form{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.contact-form input{
+    margin-bottom: 20px;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 0;
+}
+.form-2-block{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.form-2-block input{
+    width: 50%;
+}
+.contact-form form > input{
+    width: 100%;
+}
+.contact-form button{
+    display: block;
+    margin: 10px auto;
+    padding: 15px 40px;
+    background-color: #686f59;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    border: none;
+    transition: 0.3s ease;
+}
