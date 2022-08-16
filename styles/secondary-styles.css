@@ -222,3 +222,14 @@ summary:hover{
     border: none;
     transition: 0.3s ease;
 }
+
+/* Blog */
+.blog-grid{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.blog-img{
+    min-height: 200px;
+}
