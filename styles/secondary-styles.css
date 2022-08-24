@@ -230,6 +230,21 @@ summary:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+.blog-card{
+    text-align: center;
+}
 .blog-img{
     min-height: 200px;
+}
+.blog-img img{
+    width: 100%;
+    height: auto;
+}
+.blog-content h3{
+    font-size: 1.6em;
+    margin-bottom: 16px;
+}
+.blog-content p{
+    text-transform: uppercase;
+    font-size: 0.8em;
 }
