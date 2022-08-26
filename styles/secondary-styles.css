@@ -231,10 +231,15 @@ summary:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
+    margin-bottom: 60px;
 }
 .blog-card{
     text-align: center;
     overflow: hidden;
+}
+.blog-card > a{
+    text-decoration: none;
+    color: initial;
 }
 .blog-img{
     width: 100%;
@@ -251,7 +256,6 @@ summary:hover{
     transition: 0.3s;
     
 }
-
 .blog-content h3{
     font-size: 1.8em;
     margin: 16px 0 14px;
@@ -262,4 +266,7 @@ summary:hover{
 }
 .blog-card:hover .blog-img img{
     transform: scale(1.05);
+}
+.blog-card:hover .blog-content > h3{
+    text-decoration: underline;
 }
