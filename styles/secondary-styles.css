@@ -270,3 +270,28 @@ summary:hover{
 .blog-card:hover .blog-content > h3{
     text-decoration: underline;
 }
+/* blog post page */
+.blog-container{
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+.blog-header{
+    margin: 20px 0;
+}
+.blog-header h1{
+    font-size: 2.2em;
+}
+.blog-header p{
+    font-size: 0.8em;
+}
+.blog-content > p{
+    text-transform: none;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+.blog-content > p > img{
+    width: 100%;
+    margin-bottom: 20px;
+}
