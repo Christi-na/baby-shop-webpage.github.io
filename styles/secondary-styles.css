@@ -285,6 +285,9 @@ summary:hover{
 .blog-header p{
     font-size: 0.8em;
 }
+.blog-content{
+    margin-bottom: 60px;
+}
 .blog-content > p{
     text-transform: none;
     font-size: 15px;
@@ -294,4 +297,19 @@ summary:hover{
 .blog-content > p > img{
     width: 100%;
     margin-bottom: 20px;
+}
+.blog-content > h2{
+    text-align: left;
+    font-size: 1.8em;
+}
+.blog-content > h3{
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.blog-footer > p{
+    margin-bottom: 30px;
+}
+.blog-footer > .author{
+    font-family: initial;
+    font-size: 1.2em;
 }
