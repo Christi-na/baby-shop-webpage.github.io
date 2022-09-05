@@ -273,7 +273,7 @@ summary:hover{
 /* blog post page */
 .blog-container{
     max-width: 900px;
-    margin: 60px auto;
+    margin: 80px auto 40px;
     padding: 0 20px;
 }
 .blog-header{
@@ -284,6 +284,8 @@ summary:hover{
 }
 .blog-header p{
     font-size: 0.8em;
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
 }
 .blog-content{
     margin-bottom: 60px;
@@ -322,10 +324,11 @@ summary:hover{
     
 }
 .blog-footer_link > p{
-    background-color: #ced2c5;
+    background-color: #fff;
     width: fit-content;
     margin: 0 auto;
     padding: 0 10px;
+    font-size: 18px;
     position: relative;
 }
 .blog-footer_link p::before{
@@ -334,8 +337,12 @@ summary:hover{
     width: 50px;
     display: block;
     position: absolute;
-    top: 4px;
+    top: 2px;
     left: -15px;
     background: url(../photos/arrow-left.svg) no-repeat;
     z-index: -1;
+    transition: 0.2s;
+}
+.blog-footer_link:hover p::before{
+    left: -20px;
 }
