@@ -313,3 +313,29 @@ summary:hover{
     font-family: initial;
     font-size: 1.2em;
 }
+.blog-footer_link{
+    width: 100%;
+    display: block;
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: #000;
+    
+}
+.blog-footer_link > p{
+    background-color: #ced2c5;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+}
+.blog-footer_link p::before{
+    content: "";
+    height: 1.2em;
+    width: 50px;
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: -15px;
+    background: url(../photos/arrow-left.svg) no-repeat;
+    z-index: -1;
+}
