@@ -29,6 +29,11 @@ h2{
 p{
 	font-family: 'Poppins', sans-serif;
 }
+.wrapper{
+	max-width: 900px;
+    margin: 80px auto 40px;
+    padding: 0 20px;
+}
 /*----------HEADER----------------*/
 header{
 	width: 100%;
