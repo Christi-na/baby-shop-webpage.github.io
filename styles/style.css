@@ -34,6 +34,20 @@ p{
     margin: 80px auto 40px;
     padding: 0 20px;
 }
+a.btn{
+	padding: 15px 20px;
+	background-color: #686f59;
+	border: none;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	transition: 0.2s;
+	
+}
+a.btn:hover, a.btn:focus, a.btn:active{
+	outline: 1px solid #686f59;
+}
 /*----------HEADER----------------*/
 header{
 	width: 100%;

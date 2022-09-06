@@ -360,8 +360,25 @@ summary:hover{
     border: 2px solid #999;
     border-radius: 0;
     font-size: 16px;
+    background: transparent;
 }
-.log-in_form input:active, .log-in_form input:hover, .log-in_form input:focus{
+.input-box{
+    position: relative;
+}
+.input-box > span{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    transition: 0.2s ease;
+    pointer-events: none;
+}
+.input-box input:focus ~ span{
+    top: 4px;
+    left: 20px;
+    font-size: 0.8em;
+}
+.input-box input:active, .input-box input:hover, .input-box input:focus{
     border: 3px solid #333;
     border-radius: 0;
 }
@@ -379,3 +396,18 @@ summary:hover{
 .log-in_form button:hover{
     outline: 1px solid #686f59;
 }
+/* Shopping cart */
+.cart-section h1{
+    margin-bottom: 30px;
+}
+.cart-section a.btn{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+.cart-section .invisible-link{
+    text-decoration: none;
+    color: initial;
+    font-family: 'Poppins', sans-serif;
+}
+
