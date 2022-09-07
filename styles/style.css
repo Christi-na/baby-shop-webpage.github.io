@@ -35,7 +35,8 @@ p{
     padding: 0 20px;
 }
 a.btn{
-	padding: 15px 20px;
+	min-width: 120px;
+	padding: 12px 20px;
 	background-color: #686f59;
 	border: none;
 	color: #fff;
@@ -43,7 +44,7 @@ a.btn{
 	font-size: 14px;
 	font-family: 'Poppins', sans-serif;
 	transition: 0.2s;
-	
+	text-align: center;
 }
 a.btn:hover, a.btn:focus, a.btn:active{
 	outline: 1px solid #686f59;
@@ -168,11 +169,13 @@ header{
 	width: 100%;
 }
 #favorites-section{
+	max-width: 1500px;
+	margin: 0 auto;
 	padding: 50px;
 }
 .product-container{
 	display: grid;
-	grid-template-rows: repeat(2, 1fr);
+	/* grid-template-rows: repeat(2, 1fr); */
 	grid-template-columns: repeat(4, 1fr);
 }
 .product-container > a{

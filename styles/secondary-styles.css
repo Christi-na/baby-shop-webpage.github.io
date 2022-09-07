@@ -397,17 +397,27 @@ summary:hover{
     outline: 1px solid #686f59;
 }
 /* Shopping cart */
+
 .cart-section h1{
     margin-bottom: 30px;
+    font-size: 2.2em;
 }
 .cart-section a.btn{
     display: block;
     width: fit-content;
-    margin: 0 auto;
+    margin: 0 auto 60px;
 }
 .cart-section .invisible-link{
     text-decoration: none;
+    text-align: center;
     color: initial;
     font-family: 'Poppins', sans-serif;
+    display: block;
+    margin: 0 auto 40px;
+}
+.cart-section h2{
+    text-transform: none;
+    padding-bottom: 12px;
+    font-size: 1.8em;
 }
 
