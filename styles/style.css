@@ -52,6 +52,7 @@ a.btn:hover, a.btn:focus, a.btn:active{
 /*----------HEADER----------------*/
 header{
 	width: 100%;
+	position: relative;
 }
 #intro-message{
 	height: 55px;
@@ -72,6 +73,7 @@ header{
 	align-items: center;
 	justify-content: space-between;
 }
+
 #search-div{
 	width: 15%;
 }
@@ -84,10 +86,15 @@ header{
 	display: flex;
 	justify-content: space-between;
 }
+#mobile-menu_show, #mobile-menu_hide{
+	display: none;
+	cursor: pointer;
+}
 /*------------------MENU NAV---------------------*/
 #nav-bar{
 	width: 60%;
 	margin: 0 auto 20px;
+	transition: 0.2s ease;
 }
 #nav-list{
 	display: flex;
@@ -104,6 +111,51 @@ header{
 }
 #nav-list a:hover{
 	color: #A0A0A0;
+}
+/* Toggle Menu */
+@media (max-width: 700px) {
+	#logo-image img{
+		max-width: 50vw;
+	}
+	#logo-container .fa{
+		font-size: 1.6em;
+	}
+	#mobile-menu_show{
+		display: block;
+	}
+	#search-div,#logo-contacts_inst,  #logo-contacts_user{
+		display: none;
+	}
+	#logo-contacts{
+		width: fit-content;
+	}
+	#nav-bar{
+		position: absolute;
+		top: 260px;
+		left: -1000px;
+		height: 100vh;
+		width: 70%;
+		background-color: #e2e6d9;
+		padding: 40px 0;
+		font-size: 2em;
+		overflow: hidden;
+		overflow-y: hidden;
+	}
+	#nav-list{
+		flex-direction: column;
+	}
+	.nav-item{
+		width: 100%;
+		background-color: #fff;
+		padding-left: 30px;
+		margin-bottom: 30px;
+		font-size: 2em;
+	}
+	.nav-item a{
+		display: block;
+		width: 100%;
+		
+	}
 }
 /*----------MAIN BANNER--------------*/
 #main-banner{
