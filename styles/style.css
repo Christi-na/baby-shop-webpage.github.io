@@ -71,6 +71,7 @@ header{
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
+	align-content: center;
 	justify-content: space-between;
 }
 
@@ -86,9 +87,19 @@ header{
 	display: flex;
 	justify-content: space-between;
 }
+#mobile-menu{
+	position: relative;
+	padding-bottom: 18px;
+}
 #mobile-menu_show, #mobile-menu_hide{
+	position: absolute;
 	display: none;
 	cursor: pointer;
+}
+#mobile-menu_hide{
+	background-color: #fff;
+	padding: 0 4px;
+	z-index: 2;
 }
 /*------------------MENU NAV---------------------*/
 #nav-bar{
@@ -146,15 +157,19 @@ header{
 	}
 	.nav-item{
 		width: 100%;
-		background-color: #fff;
-		padding-left: 30px;
-		margin-bottom: 30px;
+		padding: 10px 30px ;
+		margin-bottom: 10px;
 		font-size: 2em;
 	}
-	.nav-item a{
+	#nav-list .nav-item a{
 		display: block;
 		width: 100%;
-		
+	}
+	#nav-list .nav-item a:hover{
+		color: #000;
+	}
+	.nav-item:hover, .nav-item:focus, .nav-item:active{
+		background-color: #d6dacd;
 	}
 }
 /*----------MAIN BANNER--------------*/
