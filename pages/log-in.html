@@ -14,6 +14,10 @@
 			<p>free shipping on orders over $200</p>
 		</div>
 		<div id="logo-container">
+			<div id="mobile-menu">
+				<i id="mobile-menu_show" class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+				<i id="mobile-menu_hide" class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+			</div>
 			<div id=search-div>
 				<a href="">
 					<i class="fa fa-light fa-magnifying-glass"></i>
@@ -23,9 +27,9 @@
 				<a href="../index.html"><img src="../photos/logo.webp"></a>
 			</div>
 			<div id="logo-contacts">
-				<a href="https://www.instagram.com/"><i class="fa fa-brands fa-instagram"></i></a>
-				<a href="#"><i class="fa fa-thin fa-user"></i></a>
-				<a href="shopping-cart.html"><i class="fa fa-solid fa-basket-shopping"></i></a>
+				<a id="logo-contacts_inst" href="https://www.instagram.com/"><i class="fa fa-brands fa-instagram"></i></a>
+				<a id="logo-contacts_user" href="./log-in.html"><i class="fa fa-thin fa-user"></i></a>
+				<a href="./shopping-cart.html"><i class="fa fa-solid fa-basket-shopping"></i></a>
 			</div>
 		</div>
 		<nav id="nav-bar">
@@ -82,5 +86,6 @@
 			&copy 2022 OLIVE & AVERY - ALL RIGHTS RESERVED
 		</div>
 	</footer>
+	<script src="../scripts/code.js"></script>
 </body>
 </html>
