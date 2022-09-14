@@ -83,6 +83,7 @@ header{
 }
 .logo_navigation, #logo-contacts{
 	flex: 0 1 15%;
+	vertical-align: baseline;
 }
 #logo-contacts{
 	/* width: 15%; */
@@ -91,7 +92,7 @@ header{
 }
 #mobile-menu{
 	position: relative;
-	padding-bottom: 18px;
+	/* padding-bottom: 18px; */
 }
 #mobile-menu_show, #mobile-menu_hide{
 	position: absolute;
@@ -174,6 +175,9 @@ header{
 	.nav-item:hover, .nav-item:focus, .nav-item:active{
 		background-color: #d6dacd;
 	}
+	#logo-contacts_cart{
+		margin: 0 0 0 auto;
+	}
 }
 /*----------MAIN BANNER--------------*/
 #main-banner{
@@ -186,7 +190,7 @@ header{
 	background-size: cover;
 	background-repeat: no-repeat;
 	animation-name: bannerAnimation;
-	animation-duration: 9s;
+	animation-duration: 18s;
 	animation-iteration-count: infinite;
 	position: relative;
 }
@@ -200,10 +204,19 @@ header{
 	0% {
 		background-image: url(../photos/banner1.webp);
 	}
+	27%{
+		background-image: url(../photos/banner1.webp);
+	}
 	33%{
 		background-image: url(../photos/banner2.webp);
 	}
-	66% {
+	60% {
+		background-image: url(../photos/banner2.webp);
+	}
+	66%{
+		background-image: url(../photos/banner3.webp);
+	}
+	94%{
 		background-image: url(../photos/banner3.webp);
 	}
 	100%{
@@ -271,6 +284,17 @@ header{
 	}
 	.menu-item{
 		width: 130px;
+	}
+}
+@media screen and (max-width: 480px) {
+	
+	.menu-item{
+		width: 80px;
+		outline-offset: -6px;
+	}
+	.menu-item > span{
+		font-family: 'Poppins', sans-serif;
+		font-size: 14px;
 	}
 }
 /*-----------PRODUCTS -----------*/
@@ -370,13 +394,23 @@ header{
 	background-color: #686f59;
 	cursor: pointer;
 }
+@media screen and (max-width: 480px) {
+	.input-field input{
+		width: 260px;
+	}
+	.input-field button{
+		width: 40px;
+	}
+}
 /*-----------------------------*/
 #testimonial-section{
+	padding: 30px 15px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	width: 80vw;
-	margin: 0 auto;
-	padding: 30px 0;
+	max-width: 1400px;
+	
+	
 }
 #testimonial-section div{
 	flex-basis: 48%;
@@ -386,12 +420,17 @@ header{
 	max-height: 100%;
 }
 .testimonial{
-	padding-top: 10vw;
+	padding: 40px 50px;
+	padding-top: 15%;
 }
 .testimonial h2{
 	text-align: left;
 }
-.person{
+.testimonial .review{
+	font-size: 16px;
+	line-height: 1.8em;
+}
+.testimonial .person{
 	padding-top: 10px;
 	font-weight: bold;
 }
@@ -410,7 +449,7 @@ header{
 }
 @media (max-width: 990px) {
 	.testimonial{
-		padding-top: 16px;
+		padding: 16px 10px ;
 	}
 }
 @media (max-width: 700px) {
@@ -426,18 +465,23 @@ header{
 	justify-content: space-between;
 }
 .info-col{
-	flex-basis: 32%;
+	flex-basis: 31%;
 }
 .info-col i{
 	font-size: 2em;
 	color: #414833;
 	margin: 10%;
 }
-.info-header{
-	font-weight: bold;
+.info-col .info-header{
+	font-weight: 400;
 	font-size: 1.2em;
+	letter-spacing: 0.1em;
 	font-family: 'EB Garamond', serif;
 	padding-bottom: 5%;
+}
+.info-col p{
+	font-size: 14px;
+	line-height: 1.8em;
 }
 /*-----------------FOOTER-----------------*/
 .footer{
