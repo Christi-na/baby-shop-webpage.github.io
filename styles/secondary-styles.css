@@ -102,6 +102,7 @@
 /* FAQ */
 .faq-section{
     margin: 60px auto;
+    padding: 0 20px;
     max-width: 800px;
 }
 .faq-section h1{
@@ -221,7 +222,18 @@ summary:hover{
     border: none;
     transition: 0.3s ease;
 }
-
+@media screen and (max-width: 750px){
+    .contact-form, .contact-intro_text{
+        padding: 0 20px;
+    }
+    .form-2-block{
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .form-2-block input{
+        width: 100%;
+    }
+}
 /* Blog */
 .blog-grid{
     max-width: 1400px;
@@ -255,20 +267,37 @@ summary:hover{
     transition: 0.3s;
     
 }
-.blog-content h3{
+.blog-text h3{
     font-size: 1.8em;
     margin: 16px 0 14px;
 }
-.blog-content p{
+.blog-text p{
     text-transform: uppercase;
     font-size: 0.8em;
 }
 .blog-card:hover .blog-img img{
     transform: scale(1.05);
 }
-.blog-card:hover .blog-content > h3{
+.blog-card:hover .blog-text > h3{
     text-decoration: underline;
 }
+@media screen and (max-width: 750px) {
+    .blog-grid{
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+    .blog-text{
+        margin-bottom: 20px;
+    }
+    .blog-text h3{
+        font-size: 1.4em;
+    }
+    .blog-text p{
+        font-size: 0.6em;
+    }
+}
+
+
 /* blog post page */
 .blog-container{
     max-width: 900px;
@@ -282,9 +311,9 @@ summary:hover{
     font-size: 2.2em;
 }
 .blog-header p{
+    margin: 10px 0 30px;
     font-size: 0.8em;
     letter-spacing: 0.1em;
-    margin-bottom: 30px;
 }
 .blog-content{
     margin-bottom: 60px;
@@ -345,6 +374,11 @@ summary:hover{
 .blog-footer_link:hover p::before{
     left: -20px;
 }
+@media screen and (max-width: 480px) {
+    .blog-header p{
+        font-size: 0.6em;
+    }
+}
 
 /* LOG IN */
 .log-in_form{
@@ -396,10 +430,16 @@ summary:hover{
 .log-in_form button:hover{
     outline: 1px solid #686f59;
 }
+@media screen and (max-width: 750px ) {
+    .log-in_form{
+        max-width: 440px;
+        padding: 30px 0;
+    }
+}
 /* Shopping cart */
 
 .cart-section h1{
-    margin-bottom: 30px;
+    margin: 30px 0;
     font-size: 2.2em;
 }
 .cart-section a.btn{

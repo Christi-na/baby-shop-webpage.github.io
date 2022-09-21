@@ -524,7 +524,7 @@ header{
 	letter-spacing: 0.2em;
 	color: #fff;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	#footer-grid h3{
 		margin-top: 10px;
 		font-size: 1.8em;
@@ -534,5 +534,13 @@ header{
 	}
 	#footer-grid{
 		grid-template-columns: 1fr;
+	}
+}
+@media screen and (max-width: 480px) {
+	#footer-grid h3{
+		font-size: 1.4em;
+	}
+	.footer-links ul li a{
+		font-size: 1em;
 	}
 }
