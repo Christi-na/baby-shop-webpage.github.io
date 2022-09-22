@@ -483,6 +483,23 @@ header{
 	font-size: 14px;
 	line-height: 1.8em;
 }
+@media screen and (max-width: 990px) {
+	.advertisement-section{
+		padding: 50px 0;
+	}
+	.info-box{
+		flex-direction: column;
+		gap: 30px;
+	}
+	.info-col i{
+		margin: 30px;
+		font-size: 3em;
+	}
+	.info-col .info-header{
+		padding-bottom: 10px;
+	}
+	
+}
 /*-----------------FOOTER-----------------*/
 .footer{
 	background-color: #686f59;
