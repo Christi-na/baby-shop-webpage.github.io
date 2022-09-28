@@ -19,6 +19,10 @@
 }
 .about-banner-img{
     width: 100%;
+    padding-bottom: 50%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0556/7263/5426/files/About_Page_Slideshow_Top.png?v=1640222991);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .center-text-box{
     padding: 10px 30px 30px;
@@ -80,24 +84,36 @@
         margin-top: 30px;
     }
 }
+@media (max-width: 480px) {
+    .about-banner-img{
+        width: 100%;
+        padding-bottom: 125%;
+        background-image: url(https://cdn.shopify.com/s/files/1/0556/7263/5426/files/About_Page_Fade_Slideshow_Mobile_Top.png?v=1655269285);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
 /* mission */
 .mission{
     margin-bottom: 60px;
 }
 .mission_banner{
-    height: 90vh;
+    width: 100%;
+    padding-bottom: 50%;
     background: url(https://cdn.shopify.com/s/files/1/0556/7263/5426/files/About_Page_Slideshow_1.png?v=1640222990) center left;
     background-size: cover;
     margin-bottom: 60px;
 }  
 
-@media (max-width: 1080px) {
+@media (max-width: 750px) {
     .mission_banner{
-        min-height: 1000px;
+        width: 100%;
+        padding-bottom: 125%;
         background: url(https://cdn.shopify.com/s/files/1/0556/7263/5426/files/About_Page_Slideshow_Mobile_2.png?v=1655269285) top center;
         background-size: cover;
     }
 }
+
 
 /* FAQ */
 .faq-section{
