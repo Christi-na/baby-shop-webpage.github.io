@@ -96,6 +96,9 @@ header{
 }
 #mobile-menu_show, #mobile-menu_hide{
 	position: absolute;
+	top: 0;
+	/* left: 0; */
+	transform: translateY(-50%);
 	display: none;
 	cursor: pointer;
 }
@@ -137,12 +140,10 @@ header{
 	#mobile-menu_show{
 		display: block;
 	}
-	#search-div,#logo-contacts_inst,  #logo-contacts_user{
+	#search-div, #logo-contacts_inst, #logo-contacts_user{
 		display: none;
 	}
-	#logo-contacts{
-		width: fit-content;
-	}
+	
 	#nav-bar{
 		position: absolute;
 		top: 260px;
