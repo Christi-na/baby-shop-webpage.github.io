@@ -361,6 +361,7 @@ header{
 }
 .email-section p{
 	font-family: 'Poppins', sans-serif;
+	position: relative;
 }
 .input-field{
 	padding-top: 20px;
@@ -390,11 +391,52 @@ header{
 }
 .input-field .fa{
 	color: white;
+	pointer-events: none;
 }
 .input-field button:hover{
 	background-color: #686f59;
 	cursor: pointer;
 }
+/* POPUP */
+.popup{
+	max-width: 600px;
+	padding: 60px;
+	background-color: #686f59;
+	border-radius: 2px;
+	position: fixed;
+	top: -50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	text-align: center;
+	color: white;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+	visibility: hidden;
+}
+.popup > h2{
+	color: white;
+	font-size: 1.6em;
+}
+.popup > p{
+	font-size: 16px;
+}
+.popup > button{
+	width: 80px;
+	margin-top: 50px;
+	padding: 12px 20px;
+	background-color: #f2f7e6;
+	border: none;
+	text-decoration: none;
+	font-size: 14px;
+	cursor: pointer;
+	transition: .2s;
+}
+.popup > button:hover{
+	background-color: white;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+
 @media screen and (max-width: 480px) {
 	.input-field input{
 		width: 260px;

@@ -17,3 +17,16 @@ function hideMenu(){
     hideIcon.style.display = 'none';
     pageBody[0].style.overflow = 'scroll';
 }
+
+//Popup window
+let popupWindow = document.getElementById("popup");
+
+function openPopup() {
+    popupWindow.style.visibility = "visible";
+    popupWindow.style.top = "50%";
+}
+
+function closePopup() {
+    popupWindow.style.visibility = "hidden";
+    popupWindow.style.top = "-50%";
+}

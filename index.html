@@ -126,13 +126,18 @@
 				</a>
 			</div>
 		</div>
-		<div class="email-section gray-section">
+		<div class="email-section gray-section" id="kkk">
 			<h2>Just for you</h2>
 			<p>Join the list to be the first to hear about new arrivals, sales and special offers!</p>
-			<span class="input-field">
-				<input type="email" name="email" placeholder="Email">
-				<button type="submit"><i class="fa fa-solid fa-arrow-right"></i></button>
-			</span>
+			<form action="#" class="input-field" onsubmit="openPopup(); return false;">
+				<input type="email" required name="email" placeholder="Email" >
+				<button id="popup-btn" type="submit" ><i class="fa fa-solid fa-arrow-right"></i></button>
+			</form>
+			<div class="popup" id="popup">
+				<h2>Thank You!</h2>
+				<p>Your email adress has been submitted.</p>
+				<button onclick="closePopup()" type="button" >OK</button>
+			</div>
 		</div>
 		<div id="testimonial-section">
 			<div>
