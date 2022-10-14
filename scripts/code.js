@@ -30,3 +30,22 @@ function closePopup() {
     popupWindow.style.visibility = "hidden";
     popupWindow.style.top = "-50%";
 }
+
+//Collection title
+
+const headerTitle = document.getElementById("collectionsTitle");
+//headerTitle.innerText = collectionTitle;
+
+// document.getElementById("collections-new-in").addEventListener('click', 
+// renameHeader("New In"));
+// document.getElementById("collections-baby").addEventListener('click', renameHeader("Baby"));
+// document.getElementById("collections-life").addEventListener('click', renameHeader("Lifestyle"));
+
+
+function renameHeader(title) {
+    console.log(title);
+    document.addEventListener("load", () => {
+    document.getElementById("collectionsTitle").innerHTML = title;
+});
+    document.getElementById("collectionsTitle").innerHTML = title;
+}

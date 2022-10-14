@@ -38,9 +38,9 @@
 		<nav id="nav-bar">
 			<ul id="nav-list">
 				<li class="nav-item"><a href="index.html">Home</a></li>
-				<li class="nav-item"><a href="pages/collections.html">New In</a></li>
-				<li class="nav-item"><a href="pages/collections.html">Baby</a></li>
-				<li class="nav-item"><a href="pages/collections.html">Lifestyle</a></li>
+				<li class="nav-item"><a href="pages/collections.html" onclick="renameHeader('New In')">New In</a></li>
+				<li class="nav-item"><a href="pages/collections.html" onclick="renameHeader('Baby')">Baby</a></li>
+				<li class="nav-item"><a href="pages/collections.html" onclick="renameHeader('Lifestyle')">Lifestyle</a></li>
 				<li class="nav-item"><a href="pages/contact.html">Contact</a></li>
 			</ul>
 		</nav>
@@ -126,17 +126,17 @@
 				</a>
 			</div>
 		</div>
-		<div class="email-section gray-section" id="kkk">
+		<div class="email-section gray-section">
 			<h2>Just for you</h2>
 			<p>Join the list to be the first to hear about new arrivals, sales and special offers!</p>
 			<form action="#" class="input-field" onsubmit="openPopup(); return false;">
-				<input type="email" required name="email" placeholder="Email" >
-				<button id="popup-btn" type="submit" ><i class="fa fa-solid fa-arrow-right"></i></button>
+				<input type="email"  name="email" placeholder="Email" required>
+				<button type="submit"><i class="fa fa-solid fa-arrow-right"></i></button>
 			</form>
 			<div class="popup" id="popup">
 				<h2>Thank You!</h2>
 				<p>Your email adress has been submitted.</p>
-				<button onclick="closePopup()" type="button" >OK</button>
+				<button onclick="closePopup()" type="button" class="popup-btn">OK</button>
 			</div>
 		</div>
 		<div id="testimonial-section">
@@ -147,7 +147,7 @@
 				<h2>I ABSOLUTELY LOVE IT!</h2>
 				<p class="review">"Jelly beans bear claw chocolate bar sweet sweet roll icing gummies. Pastry gummies pastry dragée cake cookie jelly-o dragée. Marzipan soufflé shortbread halvah jujubes."
 				<p class="person">- Alicia Key</p>
-				<button>Shop it</button>
+				<button onclick="location.href='./pages/collections.html'">Shop it</button>
 			</div>
 		</div>
 		<div class="gray-section advertisement-section">
@@ -195,6 +195,6 @@
 			&copy 2022 OLIVE & AVERY - ALL RIGHTS RESERVED
 		</div>
 	</footer>
-	<script src="./scripts/code.js"></script>
+	<script src="./scripts/code.js" defer></script>
 </body>
 </html>
