@@ -34,18 +34,15 @@ function closePopup() {
 //Collection title
 
 const headerTitle = document.getElementById("collectionsTitle");
-//headerTitle.innerText = collectionTitle;
 
-// document.getElementById("collections-new-in").addEventListener('click', 
-// renameHeader("New In"));
-// document.getElementById("collections-baby").addEventListener('click', renameHeader("Baby"));
-// document.getElementById("collections-life").addEventListener('click', renameHeader("Lifestyle"));
+let collectionsTitle = localStorage.getItem("collectionsTitle");
 
+if (!collectionsTitle) {
+    collectionsTitle = "New In";
+}
 
 function renameHeader(title) {
-    console.log(title);
-    document.addEventListener("load", () => {
-    document.getElementById("collectionsTitle").innerHTML = title;
-});
-    document.getElementById("collectionsTitle").innerHTML = title;
+    localStorage.setItem("collectionsTitle", title);
+    collectionsTitle = localStorage.getItem("collectionsTitle");
+    headerTitle.innerText = collectionsTitle;
 }
